@@ -1,15 +1,15 @@
 //
 //  IntroLayer.m
-//  Hungry Fish
+//  FishGame
 //
-//  Created by Iain Maguire on 23/09/2012.
+//  Created by Iain Maguire on 21/09/2012.
 //  Copyright Personal Projects 2012. All rights reserved.
 //
 
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "HelloWorldLayer.h"
+#import "TitleScreen.h"
 
 
 #pragma mark - IntroLayer
@@ -55,11 +55,10 @@
 	[self addChild: background];
 	
 	// In one second transition to the new scene
-	[self scheduleOnce:@selector(makeTransition:) delay:1];
-}
-
--(void) makeTransition:(ccTime)dt
-{
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE]];
+//	[self scheduleOnce:@selector(makeTransition:) delay:1];
+    
+   TitleScreenScene *TitleScreen = [TitleScreenScene node];
+    
+    [[CCDirector sharedDirector] replaceScene:TitleScreen];
 }
 @end

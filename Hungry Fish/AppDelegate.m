@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Hungry Fish
+//  FishGame
 //
-//  Created by Iain Maguire on 23/09/2012.
+//  Created by Iain Maguire on 21/09/2012.
 //  Copyright Personal Projects 2012. All rights reserved.
 //
 
